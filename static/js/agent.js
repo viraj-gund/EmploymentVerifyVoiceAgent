@@ -114,7 +114,7 @@ llmContextA = {
 }
 
 // url = "https://api.openai.com/v1/chat/completions";
-url = "https://employment-verify-voice-agent2/generate_response/"
+url = "https://employment-verify-voice-agent2.vercel.app/generate_response/"
 // url = "http://127.0.0.1:8000/generate_response/"
 headers = {
     "Content-Type": "application/json",
