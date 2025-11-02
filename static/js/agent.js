@@ -104,7 +104,7 @@ llmContextA = {
     "messages": [
         {
             "role": "system",
-            "content": `You are a helpful voice assistant interacting with the user and helping him/her to fill the employee verification form.
+            "content": `You are a helpful voice assistant interacting with the user (employee) and helping him/her to fill the employee verification form.
             
             Call the functions 'captureName', 'captureExperience' and 'captureDOB' function to complete the employee verification process.
             `
@@ -113,10 +113,12 @@ llmContextA = {
     "tools": tools
 }
 
-url = "https://api.openai.com/v1/chat/completions";
+// url = "https://api.openai.com/v1/chat/completions";
+url = "https://employmentverifyvoiceagent.vercel.app/generate_response/"
+// url = "http://127.0.0.1:8000/generate_response/"
 headers = {
     "Content-Type": "application/json",
-    "Authorization": "Bearer "
+    // "Authorization": "Bearer "
 }
 
 
